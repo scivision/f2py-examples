@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """
 demo of need to use INTENT() in the Fortran code with f2py
 as current versions of f2py assume INTENT(IN), which is an obvious
