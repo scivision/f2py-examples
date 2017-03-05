@@ -15,6 +15,7 @@ y=2
 #%%
 zint = prod.prodintent(x,y)
 assert zint == x*y
+assert isinstance(zint,float) #the Fortran code casts to float
 #%%
 znoint = 12345.
 znointent = prod.prodnointent(x,y,znoint)
@@ -27,3 +28,8 @@ assert zpure == x*y
 zinout = np.array(23456.) #MUST be an ndarray e.g. 0d ndarray for scalar case!
 prod.prodinout(x,y,zinout)
 assert zinout==x*y
+
+print('x =',x)
+print('y =',y)
+print('x * y =',zint)
+print('Your system did this in Python using Fortran-compiled library')

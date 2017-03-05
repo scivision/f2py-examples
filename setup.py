@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 import setuptools #needed to enable develop
-import subprocess
 
-try:
-    subprocess.call(['conda','install','--file','requirements.txt'])
-except Exception as e:
-    pass
-
+#%% Monkey patch necessary since setup_requires is not adequate
+import pip
+pip.main(['install','numpy'])
+#%% install
 from numpy.distutils.core import setup,Extension
 
 ext=[Extension(name='pyprod',
@@ -14,12 +12,16 @@ ext=[Extension(name='pyprod',
                f2py_options=['--quiet'],
     )]
 
+req = ['nose','numpy']
+
 #%% install
 setup(name='demof2py',
-	 description='demo Python wrap of Fortrna',
-	 author='Michael Hirsch',
+	 description='demo Python wrap of Fortran',
+	 author='Michael Hirsch, Ph.D.',
 	 url='https://github.com/scienceopen/f2pyExamples',
+     version='0.1',
      ext_modules=ext,
+     install_requires=req,
       )
 
 
