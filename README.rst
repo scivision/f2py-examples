@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.org/scienceopen/f2pyExamples.svg?branch=master
+    :target: https://travis-ci.org/scienceopen/f2pyExamples
+
 =============
 f2py Examples
 =============
