@@ -11,7 +11,7 @@ Setup
     python setup.py develop
 
 This will compile the Fortran code (in ``.f`` and ``.f90`` files) and create a file ``pyprod.*`` where ``*`` depends on your operating system and Python version. 
-On Linux/Mac, the file extension will be `.so` while on Windows it will be ``.pyd``.
+On Linux/Mac, the file extension will be ``.so`` while on Windows it will be ``.pyd``.
 
 Run
 ===
