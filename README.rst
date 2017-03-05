@@ -1,8 +1,8 @@
 =============
 f2py Examples
 =============
-Simple examples of using f2py to get high-speed Fortran integrated with Python easily
-These examples are also useful to troubleshoot problems with `f2py`.
+Simple examples of using ``f2py`` to get high-speed Fortran integrated with Python easily.
+These examples are also useful to troubleshoot problems with ``f2py``.
 
 Setup
 =====
