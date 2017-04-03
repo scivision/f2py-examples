@@ -1,10 +1,5 @@
 #!/usr/bin/env python
 import setuptools #needed to enable develop
-
-#%% Monkey patch necessary since setup_requires is not adequate
-import pip
-pip.main(['install','numpy'])
-#%% install
 from numpy.distutils.core import setup,Extension
 
 ext=[Extension(name='pyprod',
