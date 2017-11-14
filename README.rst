@@ -1,6 +1,13 @@
 .. image:: https://travis-ci.org/scivision/f2pyExamples.svg?branch=master
     :target: https://travis-ci.org/scivision/f2pyExamples
 
+.. image:: https://coveralls.io/repos/github/scivision/f2pyExamples/badge.svg?branch=master
+    :target: https://coveralls.io/github/scivision/f2pyExamples?branch=master
+
+.. image:: https://api.codeclimate.com/v1/badges/267260ede653e9a5e2f4/maintainability
+   :target: https://codeclimate.com/github/scivision/f2pyExamples/maintainability
+   :alt: Maintainability
+
 =============
 f2py Examples
 =============
@@ -28,7 +35,7 @@ Linux
     
 Windows
 -------
-[Install Gfortran](https://www.scivision.co/install-latest-gfortran-on-ubuntu/)
+`Install Gfortran <https://www.scivision.co/install-latest-gfortran-on-ubuntu/>`_
 
 Install
 =======
@@ -48,7 +55,7 @@ Fortran Intents
 
     python f2py_demo.py
 
-You will see the output
+You will see the output::
  
     x = 3
     y = 2
