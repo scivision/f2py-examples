@@ -1,14 +1,5 @@
 #!/usr/bin/env python
-
 req = ['nose','numpy']
-
-try:
-    import conda.cli
-    conda.cli.main('install',*req)
-except Exception as e:
-    import pip
-    pip.main(['install'] + req)
-
 # %%
 import setuptools #needed to enable develop
 from numpy.distutils.core import setup,Extension
@@ -26,6 +17,7 @@ setup(name='demof2py',
      version='0.1',
      ext_modules=ext,
      install_requires=req,
+     python_requires='>=2.7',
       )
 
 
