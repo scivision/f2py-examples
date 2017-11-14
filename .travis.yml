@@ -25,6 +25,8 @@ addons:
 
 before_install:
   - pip -q install coveralls
+  # this is temporary for pip < 9.1
+  - pip -q install numpy
 
 install: pip install -e .
 

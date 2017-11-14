@@ -7,8 +7,31 @@ f2py Examples
 Simple examples of using ``f2py`` to get high-speed Fortran integrated with Python easily.
 These examples are also useful to troubleshoot problems with ``f2py``.
 
-Setup
-=====
+
+Prereqs
+=======
+If you don't already have Numpy::
+
+    pip install numpy
+
+Mac 
+---
+::
+
+    brew install gcc
+    
+Linux
+-----
+:: 
+
+    apt install gfortran
+    
+Windows
+-------
+[Install Gfortran](https://www.scivision.co/install-latest-gfortran-on-ubuntu/)
+
+Install
+=======
 ::
 
     pip install -e .
