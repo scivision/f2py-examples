@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 req = ['nose','numpy']
 # %%
-import setuptools #needed to enable develop
 from numpy.distutils.core import setup,Extension
 
 ext=[Extension(name='pyprod',
