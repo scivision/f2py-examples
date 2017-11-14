@@ -28,7 +28,7 @@ before_install:
   # this is temporary for pip < 9.1
   - pip -q install numpy
 
-install: pip install -e .
+install: pip -q install -e .
 
 script: coverage run tests/test.py -v
 
