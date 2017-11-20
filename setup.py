@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 req = ['nose','numpy']
 # %%
+from setuptools import find_packages
 from numpy.distutils.core import setup,Extension
 
 ext=[Extension(name='pyprod',
