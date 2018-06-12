@@ -3,17 +3,12 @@ fast_finish: true
 
 python:
   - 3.6
-  - 2.7
 
 os:
   - linux
 
-dist: trusty
-group: edge
+group: travis_latest
   
-
-notifications:
-  email: false
 
 git:
   depth: 3
@@ -23,14 +18,11 @@ addons:
     packages:
     - gfortran
 
-before_install:
-  - pip -q install coveralls
-  # this is temporary for pip < 9.1
-  - pip -q install numpy
+install: pip install -e .[tests]
 
-install: pip -q install -e .
+script: pytest -v
 
-script: coverage run tests/test.py -v
-
-after_success: coveralls
+after_success: 
+  - coverage run tests/test_all.py
+  - coveralls
 
