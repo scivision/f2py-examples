@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 import numpy as np
 from pyprod import prod
-from numpy.testing import run_module_suite
-
+import pytest
 
 def test_main():
     x=3
@@ -25,4 +24,4 @@ def test_main():
     assert zinout==x*y
 
 if __name__ =='__main__':
-    run_module_suite()
+    pytest.main()
