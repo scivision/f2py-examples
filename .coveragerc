@@ -1,0 +1,11 @@
+[run]
+cover_pylib=False
+omit = /home/travis/virtualenv/*
+
+[report]
+exclude_lines =
+  pragma: no cover
+  def __repr__
+  RuntimeError
+  NotImplementedError
+  
