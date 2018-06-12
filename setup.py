@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-req = ['nose','numpy']
+install_requires = ['numpy']
+tests_require = ['pytest', 'coveralls']
 # %%
 from setuptools import find_packages
 from numpy.distutils.core import setup,Extension
@@ -16,7 +17,9 @@ setup(name='demof2py',
 	 url='https://github.com/scivision/f2pyExamples',
      version='0.1',
      ext_modules=ext,
-     install_requires=req,
+     install_requires=install_requires,
+     tests_require=tests_require,
+     extras_require={'tests': tests_require},
      python_requires='>=2.7',
       )
 
