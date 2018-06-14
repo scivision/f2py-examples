@@ -20,7 +20,10 @@ addons:
 
 install: pip install -e .[tests]
 
-script: pytest -v
+script: 
+  - pytest -v
+  - flake8
+  - mypy . --ignore-missing-imports
 
 after_success: 
   - coverage run tests/test_all.py
