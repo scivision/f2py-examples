@@ -8,11 +8,7 @@
 Simple examples of using `f2py` to get high-speed Fortran integrated with Python easily. 
 These examples are also useful to troubleshoot problems with `f2py`.
 
-## Buile
-
-Numpy contains `f2py:
-
-    pip install numpy
+## Build
 
 Fortran compiler is needed:
 
@@ -26,9 +22,10 @@ Fortran compiler is needed:
     pip install -e .
 
 This will compile the Fortran code (in `.f` and `.f90` files) and create
-a file `pyprod.*` where `*` depends on your operating system and Python
-version. On Linux/Mac, the file extension will be `.so` while on Windows
-it will be `.pyd`.
+a file `pyprod.*` where `*` depends on your operating system and Python version. 
+
+* Linux/Mac: `.so` 
+* Windows: `.pyd`
 
 ## Examples
 
