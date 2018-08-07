@@ -2,6 +2,7 @@
 import numpy as np
 from pyprod import prod
 import pytest
+from pytest import approx
 
 
 def test_main():
@@ -16,7 +17,7 @@ def test_main():
     znointent = prod.prodnointent(x, y, znoint)
     assert znointent is None
     # unmodified due to f2py intent(in) by default
-    assert np.isclose(znoint, 12345.)
+    assert znoint == approx(12345.)
     # %%
     zpure = prod.prodpure(x, y)
     assert zpure == x*y
@@ -28,4 +29,4 @@ def test_main():
 
 
 if __name__ == '__main__':
-    pytest.main()
+    pytest.main(['-x', __file__])
