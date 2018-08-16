@@ -11,7 +11,7 @@ def test_main():
     # %%
     zint = prod.prodintent(x, y)
     assert zint == x*y
-    assert isinstance(zint, float)  # the Fortran code casts to float
+    assert isinstance(zint, float)  # f2py casts int => float
     # %%
     znoint = 12345.
     znointent = prod.prodnointent(x, y, znoint)
