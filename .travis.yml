@@ -10,6 +10,8 @@ python:
 - 3.6
 - 3.7
 
+env: FC=gfortran
+
 addons:
   apt:
     packages:
@@ -28,6 +30,7 @@ matrix:
     - coveralls
   - os: osx
     language: sh
+    before_install: brew install gcc > /dev/null
     install: pip3 install -e .[tests]
   - os: windows
     language: sh
