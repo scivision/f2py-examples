@@ -33,22 +33,25 @@ It creates a file `pyprod.*` where `*` depends on operating system and Python ve
 
 ### Fortran Intents
 
-    python f2py_demo.py
-
+```sh
+python f2py_demo.py
+```
 You will see the output:
-
-    x = 3
-    y = 2
-    x * y = 6.0
-    Your system did this in Python using Fortran-compiled library
+```
+x = 3
+y = 2
+x * y = 6.0
+Your system did this in Python using Fortran-compiled library
+```
 
 ### Fortran comment syntax
 
 Fortran 77 is officially full-line comments only. Inline comments are
 not allowed with `f2py` as a result in Fortran 77 files. Demonstrate
 this with:
-
-    f2py -m badcomment -c badcomment.f
+```sh
+f2py -m badcomment -c badcomment.f
+```
 
 ## Troubleshooting f2py
 
