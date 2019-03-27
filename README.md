@@ -15,7 +15,7 @@ Fortran compiler is needed:
 
 * Mac: `brew install gcc`
 * Linux: `apt install gfortran`  or  `yum install gfortran`
-* [Windows](https://www.scivision.co/install-latest-gfortran-on-ubuntu/)
+* [Windows](https://www.scivision.dev/install-latest-gfortran-on-ubuntu/)
 
 ### Install
 
