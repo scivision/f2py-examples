@@ -3,7 +3,7 @@ group: travis_latest
 dist: xenial
 
 git:
-  depth: 3
+  depth: 25
   quiet: true
 
 python:
@@ -24,19 +24,19 @@ matrix:
     install: pip install -e .[tests,cov]
     script: 
     - flake8
-    - mypy . --ignore-missing-imports
+    - mypy .
     after_success:
-    - pytest --cov --cov-config=setup.cfg
+    - pytest --cov
     - coveralls
-  - os: osx
-    language: sh
-    before_install: brew install gcc > /dev/null
-    install: pip3 install -e .[tests]
-  - os: windows
-    language: sh
-    before_install:
-    - choco install python3
-    - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
+#  - os: osx
+#    language: sh
+#    before_install: brew install gcc > /dev/null
+#    install: pip3 install -e .[tests]
+#  - os: windows
+#    language: sh
+#    before_install:
+#    - choco install python3
+#    - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
 
 install: pip install -e .[tests]
 

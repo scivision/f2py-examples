@@ -6,7 +6,7 @@
 # f2py Examples
 
 
-Simple examples of using `f2py` to get high-speed Fortran integrated with Python easily. 
+Simple examples of using `f2py` to get high-speed Fortran integrated with Python easily.
 These examples are also useful to troubleshoot problems with `f2py`.
 
 ## Build
@@ -26,7 +26,7 @@ pip install -e .
 This will compile the Fortran code (in `.f` and `.f90` files).
 It creates a file `pyprod.*` where `*` depends on operating system and Python version:
 
-* Linux/Mac: `.so` 
+* Linux/Mac: `.so`
 * Windows: `.pyd`
 
 ## Examples
@@ -55,9 +55,9 @@ f2py -m badcomment -c badcomment.f
 
 ## Troubleshooting f2py
 
-`f2py` normally Just Works on Linux, Mac and 
-[Windows Subsystem for Linux](https://www.scivision.co/tag/#windows-subsystem-for-linux).
+`f2py` normally Just Works on Linux, Mac and
+[Windows Subsystem for Linux](https://www.scivision.dev/tag/#windows-subsystem-for-linux).
 However, Windows itself can be more challenging due to inconsistencies in Microsoft Visual Studio.
 
-See the Windows f2py installation guide and troubleshooting 
-[guide](https://www.scivision.co/f2py-running-fortran-code-in-python-on-windows/).
+See the Windows f2py installation guide and troubleshooting
+[guide](https://www.scivision.dev/f2py-running-fortran-code-in-python-on-windows/).
