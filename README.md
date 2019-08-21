@@ -56,7 +56,7 @@ f2py -m badcomment -c badcomment.f
 ## Troubleshooting f2py
 
 `f2py` normally Just Works on Linux, Mac and
-[Windows Subsystem for Linux](https://www.scivision.dev/tag/windows-subsystem-for-linux).
+[Windows Subsystem for Linux](https://www.scivision.dev/tags/windows-subsystem-for-linux).
 However, Windows itself can be more challenging due to inconsistencies in Microsoft Visual Studio.
 
 See the Windows f2py installation guide and troubleshooting
