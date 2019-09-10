@@ -1,7 +1,4 @@
-[![Build Status](https://travis-ci.org/scivision/f2py-examples.svg?branch=master)](https://travis-ci.org/scivision/f2py-examples)
-[![Coverage Status](https://coveralls.io/repos/github/scivision/f2py-examples/badge.svg?branch=master)](https://coveralls.io/github/scivision/f2py-examples?branch=master)
-[![Build status](https://ci.appveyor.com/api/projects/status/n4a4xcu9ixsb9gf7?svg=true)](https://ci.appveyor.com/project/scivision/f2py-examples)
-[![Maintainability](https://api.codeclimate.com/v1/badges/267260ede653e9a5e2f4/maintainability)](https://codeclimate.com/github/scivision/f2pyExamples/maintainability)
+[![Actions Status](https://github.com/scivision/f2py-examples/workflows/ci/badge.svg)](https://github.com/scivision/f2py-examples/actions)
 
 # f2py Examples
 
