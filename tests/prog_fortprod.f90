@@ -1,6 +1,5 @@
 ! this program should return "6." for each print
 
-Program prodfort
 use prod
 implicit none
 real x,y
@@ -22,4 +21,4 @@ print *,zinout
 zpure = prodpure(x,y)
 print *,zpure
 
-End Program
+end program

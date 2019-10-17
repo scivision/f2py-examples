@@ -29,4 +29,4 @@ def test_main():
 
 
 if __name__ == '__main__':
-    pytest.main(['-x', __file__])
+    pytest.main(['-v', __file__])
