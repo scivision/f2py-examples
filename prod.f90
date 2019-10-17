@@ -1,5 +1,6 @@
 module prod
-    implicit none
+
+implicit none
 
 contains
 
@@ -33,7 +34,7 @@ real, Intent(In) :: x,y
 real, Intent(inout)  :: z
 z = x * y
 End Subroutine
-        
+
 Pure Real Function prodpure(x,y)
 ! Elemental & Pure functions require intent declaration
 real, Intent(in) :: x,y

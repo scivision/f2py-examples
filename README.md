@@ -28,6 +28,15 @@ It creates a file `pyprod.*` where `*` depends on operating system and Python ve
 
 ## Examples
 
+### .f2py_cmap required
+
+A file `.f2py_cmap` as in this repository must be in the top-level (same as setup.py) of the project directory tree.
+If this file is missing, all "real" kinds map to float32, which is not in general what is wanted.
+A missing .f2py_cmap will lead float64 values to be completely incorrect.
+
+The names in the .f2py_cmap must exactly match the Fortran variable names used for the real kind.
+If you use dp=>real64 in the Fortran code, then .f2py_cmap must map `dp` as well.
+
 ### Fortran Intents
 
 ```sh
