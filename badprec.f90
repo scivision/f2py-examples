@@ -1,6 +1,7 @@
 module badprec
 
-!! shows how f2py just assumes all real are float32 unless matching .f2py_cmap
+!! shows how f2py just assumes all real are float32
+!! unless kind matches file .f2py_f2cmap
 
 use, intrinsic :: iso_fortran_env, only: real32, real64
 
