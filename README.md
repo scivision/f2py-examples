@@ -1,6 +1,6 @@
 # f2py Examples
 
-[![Actions Status](https://github.com/scivision/f2py-examples/workflows/ci/badge.svg)](https://github.com/scivision/f2py-examples/actions)
+![Actions Status](https://github.com/scivision/f2py-examples/workflows/ci/badge.svg)
 
 
 Simple examples of using `f2py` to get high-speed Fortran integrated with Python easily.
@@ -12,7 +12,7 @@ Fortran compiler is needed:
 
 * Mac: `brew install gcc`
 * Linux: `apt install gfortran`  or  `yum install gfortran`
-* [Windows](https://www.scivision.dev/install-latest-gfortran-on-ubuntu/)
+* [Windows](https://www.scivision.dev/install-msys2-windows)
 
 ### Install
 
@@ -66,4 +66,4 @@ f2py -m badcomment -c badcomment.f
 However, Windows itself can be more challenging due to inconsistencies in Microsoft Visual Studio.
 
 See the Windows f2py installation guide and troubleshooting
-[guide](https://www.scivision.dev/f2py-running-fortran-code-in-python-on-windows/).
+[guide](https://www.scivision.dev/f2py-fortran-python-windows/).
