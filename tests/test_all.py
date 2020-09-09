@@ -1,7 +1,5 @@
-#!/usr/bin/env python
 import numpy as np
 from pyprod import prod
-import pytest
 from pytest import approx
 
 
@@ -26,7 +24,3 @@ def test_main():
     zinout = np.array(23456.0)
     prod.prodinout(x, y, zinout)
     assert zinout == x * y
-
-
-if __name__ == '__main__':
-    pytest.main(['-v', __file__])

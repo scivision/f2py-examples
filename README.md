@@ -2,7 +2,6 @@
 
 ![Actions Status](https://github.com/scivision/f2py-examples/workflows/ci/badge.svg)
 
-
 Simple examples of using `f2py` to get high-speed Fortran integrated with Python easily.
 These examples are also useful to troubleshoot problems with `f2py`.
 
@@ -42,7 +41,9 @@ If you use dp=>real64 in the Fortran code, then .f2py_f2cmap must map `dp` as we
 ```sh
 python f2py_demo.py
 ```
-You will see the output:
+
+output:
+
 ```
 x = 3
 y = 2
@@ -61,7 +62,7 @@ f2py -m badcomment -c badcomment.f
 
 ## Troubleshooting f2py
 
-`f2py` normally Just Works on Linux, Mac and
+`f2py` normally Just Works on Linux, MacOS and
 [Windows Subsystem for Linux](https://www.scivision.dev/tags/windows-subsystem-for-linux).
 However, Windows itself can be more challenging due to inconsistencies in Microsoft Visual Studio.
 

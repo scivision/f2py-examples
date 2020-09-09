@@ -6,6 +6,7 @@ on:
       - "**.py"
       - "**.f90"
       - "**.f"
+      - .github/workflows/ci.yml
 
 jobs:
 
@@ -17,9 +18,10 @@ jobs:
       with:
         python-version: '3.x'
 
-    - run: sudo apt install -yq --no-install-recommends gfortran
-
     - run: pip install -e .[tests,lint]
+      env:
+        FC: gfortran-9
+        CC: gcc-9
 
     - run: flake8
     - run: mypy .
@@ -27,6 +29,7 @@ jobs:
     - run: pytest
 
   macos:
+    if: false  # f2py doesn't use FC it seems
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
@@ -34,9 +37,10 @@ jobs:
       with:
         python-version: '3.x'
 
-    - run: brew install gcc
-
     - run: pip install -e .[tests]
+      env:
+        FC: gfortran-9
+        CC: gcc-9
 
     - run: pytest
 

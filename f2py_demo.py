@@ -31,7 +31,7 @@ zinout = np.array(23456.0)
 prod.prodinout(x, y, zinout)
 assert zinout == x * y
 
-print('x =', x)
-print('y =', y)
-print('x * y =', zint)
-print('Your system did this in Python using Fortran-compiled library')
+print("x =", x)
+print("y =", y)
+print("x * y =", zint)
+print("Your system did this in Python using Fortran-compiled library")

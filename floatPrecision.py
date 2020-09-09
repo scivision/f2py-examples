@@ -46,8 +46,8 @@ while h != h + np.float16(1):
     ph += 1
 
 eps16 = 2 ** (-(ph - 1))
-print('bits of precision for 16-bit float', ph)
-print('machine epsilon: 16-bit float', eps16)
+print("bits of precision for 16-bit float", ph)
+print("machine epsilon: 16-bit float", eps16)
 
 # %% single prec
 ps = 0
@@ -58,8 +58,8 @@ while s != s + np.float32(1):
     ps += 1
 
 eps32 = 2 ** (-(ps - 1))
-print('bits of precision for 32-bit float', ps)
-print('machine epsilon: 32-bit float', eps32)
+print("bits of precision for 32-bit float", ps)
+print("machine epsilon: 32-bit float", eps32)
 # %% double prec
 pd = 0
 d = 1.0
@@ -69,8 +69,8 @@ while d != d + 1:
     pd += 1
 
 eps64 = 2 ** (-(pd - 1))
-print('bits of precision for 64-bit float', pd)
-print('machine epsilon: 64-bit float', eps64)
+print("bits of precision for 64-bit float", pd)
+print("machine epsilon: 64-bit float", eps64)
 # %% quad prec
 """
 caveats on Numpy "long double":
@@ -84,5 +84,5 @@ while q != q + np.float128(1):
     pq += 1
 
 eps128 = 2 ** (-(pq - 1))
-print('bits of precision for long double', pq)
-print('machine epsilon: long double', eps128)
+print("bits of precision for long double", pq)
+print("machine epsilon: long double", eps128)
