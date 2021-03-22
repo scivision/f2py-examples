@@ -19,12 +19,9 @@ jobs:
         python-version: '3.x'
 
     - run: pip install -e .[tests,lint]
-      env:
-        FC: gfortran-9
-        CC: gcc-9
 
     - run: flake8
-    - run: mypy .
+    - run: mypy
 
     - run: pytest
 
@@ -39,8 +36,8 @@ jobs:
 
     - run: pip install -e .[tests]
       env:
-        FC: gfortran-9
-        CC: gcc-9
+        FC: gfortran-10
+        CC: gcc-10
 
     - run: pytest
 
