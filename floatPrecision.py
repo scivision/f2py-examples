@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+
 """
 Demonstrates limits of IEEE754 floating point precision
 
@@ -35,6 +36,7 @@ https://gcc.gnu.org/onlinedocs/gcc/Half-Precision.html
 Matlab: via external libraries.
 Python: Numpy
 """
+
 import numpy as np
 
 # %% half prec

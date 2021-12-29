@@ -1,4 +1,5 @@
 import numpy as np
+
 from pyprod import prod
 from pytest import approx
 
